@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/product-list.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<style type="text/css">.icon {width: 1em; height: 1em;vertical-align: -0.15em;fill: currentColor;overflow: hidden;}</style>
+	<script src = "js/require.js" async="true" defer data-main = "js/product-list"></script>
+	<script src="font/iconfont.js"></script>
+	
+</head>
+<body class="iconfont">
+	<!-- 页首 -->
+	<div id = "bigHeader">
+		<div id = "header">
+			<ul>
+				<li id="account"><a href="log.html"><i>&#xe634;</i>我的账户<i>&#xe501;</i></a></li>
+				<li id="shop"><a href=""><i>&#xe65a;</i>我的购物车</a><div class="shopping"><ul class="shopping-top"></ul><div>进入购物车</div></div></li>
+				<li><a href=""><i>&#xe613;</i>我的收藏</a></li>
+				<li><a href="">我的站内信</a></li>
+				<li><a href="">积分中心</a></li>
+				<li><a href="">Global site</a></li>
+				<li>
+					<span>关注我们</span>
+					<img id="weixin" src="images/weixin.png" alt="">
+					<img id="weibo" src="images/weibo.png" alt="">
+					<div id="weiboQR"><img src="images/weiboQR.png" alt="" ></div>
+					<div id="weixinQR"><img src="images/weixinQR.png" alt=""></div>
+				</li>
+			</ul>
+			<p>欢迎光临莎莎网！</p>&ensp;
+			<a href="">登陆</a>或<a href="">免费注册</a>
+		</div>
+	</div>
+
+	<!-- 导航 -->
+	<div id="nav">
+		<div class="top">
+			<a href=""><img src="images/logo.png" alt=""></a>
+			<form action="">
+				<input type="text" placeholder="JMsolution"><input type="submit" placeholder="搜索">
+			</form>
+			<div>
+				<a href="">海藻面膜</a>
+				<a href="">兰蔻粉水</a>
+				<a href="">面霜</a>
+				<a href="">口红</a>
+				<a href="">科颜氏</a>
+				<a href="">VT</a>
+				<a href="">瑞士葆丽美</a>
+			</div>
+		</div>
+		<div class ="bottom">
+			<div class="nav-bottom-title">&ensp;<i>&#xe60b;</i>&ensp;<span>全部分类</span>
+				<ul id="sider" style="display: none;">
+					<li>
+						<div class="sider-left">&ensp;<i>&#xe6ac;</i>&ensp;<a href="">面部护肤</a><i>&#xe505;</i></div>
+					</li>
+					<li>
+						<div class="sider-left">&ensp;<i>&#xe602;</i>&ensp;<a href="">彩妆</a><i>&#xe505;</i></div>
+					</li>
+					<li>
+						<div class="sider-left">&ensp;<i>&#xe618;</i>&ensp;<a href="">香水</a><i>&#xe505;</i></div>
+					</li>
+					<li>
+						<div class="sider-left">&ensp;<i>&#xe626;</i>&ensp;<a href="">健康美肌</a><i>&#xe505;</i></div>
+					</li>
+					<li>
+						<div class="sider-left">&ensp;<i>&#xe646;</i>&ensp;<a href="">纤体美胸</a><i>&#xe505;</i></div>
+					</li>
+					<li>
+						<div class="sider-left">&ensp;<i>&#xe61d;</i>&ensp;<a href="">个人护理</a><i>&#xe505;</i></div>
+					</li>
+					<li>
+						<div class="sider-left">&ensp;<i>&#xe756;</i>&ensp;<a href="">男士专区</a><i>&#xe505;</i></div>
+					</li>
+					<li>
+						<div class="sider-left">&ensp;<i>&#xe64f;</i>&ensp;<a href="">孕婴护理</a><i>&#xe505;</i></div>
+					</li>
+				</ul>
+			</div>
+			<div><a href=""><img src="images/only.gif" alt=""></a></div><i>/</i>
+			<div><a href="">闪电保税仓</a></div><i>/</i>
+			<div><a href="">限时特卖<i>&#xe517;</i></a></div><i>/</i>
+			<div><a href="">大牌低价购</a></div><i>/</i>
+			<div><a href="">贵宾专享</a></div><i>/</i>
+			<div><span>所有品牌</span><i>&#xe621;</i></div>
+		</div>
+	</div>
+	<!-- 内容 -->
+	<div id="big-content">
+		<div id="content">
+			<div class="content-right">
+				<div class="content-right-option">
+					<dl>
+						<dt>已选</dt>
+						<dd></dd>
+						<div style="float: right;margin-right: 55px;"><p>重置筛选项</p></div>
+					</dl>
+				</div>
+				<div class="content-right-click"><p class="down">显示更多筛选项<i>&#xe501;</i></p><p class="up" style="display: none;">收起更多筛选项<i>&#xe514;</i></p></div>
+				<div class="content-right-sort">
+					<ul>
+						<li>排序</li>
+						<li><a href="">销售</a></li>
+						<li><a href="">人气</a></li>
+						<li><a href="">评分</a></li>
+						<li><a href="">上架时间</a></li>
+						<li><a href="">价格</a></li>
+						<li>
+							<form action="">
+								<input type="checkbox">
+							</form>
+							<b>只看特卖</b><em>(共4450件商品)</em><span><i>&#xe507;</i>1/44<i>&#xe50a;</i></span>
+						</li>
+					</ul>
+				</div>
+				<ul class="content-right-product">
+				</ul>
+			</div>
+			<div class="content-left">
+				<div class="content-left-title">产品分类</div>
+				<ul class="content-left-ul">
+					<li class="content-left-link">
+						<p class="content-left-link-title"><i>&#xe50a;</i><a href="">面部护肤</a></p>
+						<div>
+							<a href=""><i>&#xe505;</i>洁面</a>
+							<a href=""><i>&#xe505;</i>磨砂</a>
+							<a href=""><i>&#xe505;</i>卸妆</a>
+							<a href=""><i>&#xe505;</i>化妆水</a>
+							<a href=""><i>&#xe505;</i>精华</a>
+							<a href=""><i>&#xe505;</i>面霜</a>
+							<a href=""><i>&#xe505;</i>面膜</a>
+							<a href=""><i>&#xe505;</i>颈部护理</a>
+							<a href=""><i>&#xe505;</i>眼部护理</a>
+							<a href=""><i>&#xe505;</i>暗疮护理</a>
+							<a href=""><i>&#xe505;</i>唇部护理</a>
+							<a href=""><i>&#xe505;</i>防晒护理</a>
+							<a href=""><i>&#xe505;</i>高端美容仪器</a>
+							<a href=""><i>&#xe505;</i>美容工具</a>
+							<a href=""><i>&#xe505;</i>套装</a>
+							<a href=""><i>&#xe505;</i>小样</a>
+						</div>
+					</li>
+					<li class="content-left-link">
+						<p class="content-left-link-title"><i>&#xe50a;</i><a href="">彩妆</a></p>
+						<div>
+							<a href=""><i>&#xe505;</i>隔离霜</a>
+							<a href=""><i>&#xe505;</i>粉底</a>
+							<a href=""><i>&#xe505;</i>遮瑕</a>
+							<a href=""><i>&#xe505;</i>BB霜</a>
+							<a href=""><i>&#xe505;</i>CC霜</a>
+							<a href=""><i>&#xe505;</i>胭脂</a>
+							<a href=""><i>&#xe505;</i>眉笔/眉粉</a>
+							<a href=""><i>&#xe505;</i>眼影</a>
+							<a href=""><i>&#xe505;</i>眼线</a>
+							<a href=""><i>&#xe505;</i>睫毛膏</a>
+							<a href=""><i>&#xe505;</i>美唇</a>
+							<a href=""><i>&#xe505;</i>彩妆盒/套装</a>
+							<a href=""><i>&#xe505;</i>化妆扫</a>
+							<a href=""><i>&#xe505;</i>化妆工具</a>
+							<a href=""><i>&#xe505;</i>美甲</a>
+						</div>
+					</li>
+					<li class="content-left-link">
+						<p class="content-left-link-title"><i>&#xe50a;</i><a href="">香水</a></p>
+						<div>
+							<a href=""><i>&#xe505;</i>女士香水</a>
+							<a href=""><i>&#xe505;</i>男士香水</a>
+							<a href=""><i>&#xe505;</i>香水套装</a>
+							<a href=""><i>&#xe505;</i>香水工具</a>
+						</div>
+					</li>
+					<li class="content-left-link">
+						<p class="content-left-link-title"><i>&#xe50a;</i><a href="">健康美肌</a></p>
+						<div>
+							<a href=""><i>&#xe505;</i>美容补充品</a>
+							<a href=""><i>&#xe505;</i>非处方药品</a>
+							<a href=""><i>&#xe505;</i>保健品</a>
+							<a href=""><i>&#xe505;</i>健康零食</a>
+							<a href=""><i>&#xe505;</i>天然草本茶</a>
+						</div>
+					</li>
+					<li class="content-left-link">
+						<p class="content-left-link-title"><i>&#xe50a;</i><a href="">纤体美胸</a></p>
+						<div>
+							<a href=""><i>&#xe505;</i>纤体护理</a>
+							<a href=""><i>&#xe505;</i>纤体食品</a>
+							<a href=""><i>&#xe505;</i>纤体工具</a>
+							<a href=""><i>&#xe505;</i>纤体套装</a>
+							<a href=""><i>&#xe505;</i>美胸用品</a>
+						</div>
+					</li>
+					<li class="content-left-link">
+						<p class="content-left-link-title"><i>&#xe50a;</i><a href="">个人护理</a></p>
+						<div>
+							<a href=""><i>&#xe505;</i>沐浴/润肤</a>
+							<a href=""><i>&#xe505;</i>洗发/护发</a>
+							<a href=""><i>&#xe505;</i>头发造型</a>
+							<a href=""><i>&#xe505;</i>手足部护理</a>
+							<a href=""><i>&#xe505;</i>脱毛用品</a>
+							<a href=""><i>&#xe505;</i>女性护理</a>
+							<a href=""><i>&#xe505;</i>止汗香体</a>
+							<a href=""><i>&#xe505;</i>隐形眼镜</a>
+							<a href=""><i>&#xe505;</i>口腔护理</a>
+							<a href=""><i>&#xe505;</i>家具用品</a>
+							<a href=""><i>&#xe505;</i>头饰/饰物</a>
+							<a href=""><i>&#xe505;</i>礼品套装</a>
+						</div>
+					</li>
+					<li class="content-left-link">
+						<p class="content-left-link-title"><i>&#xe50a;</i><a href="">男士专区</a></p>
+						<div>
+							<a href=""><i>&#xe505;</i>男士洁面</a>
+							<a href=""><i>&#xe505;</i>男士护肤</a>
+							<a href=""><i>&#xe505;</i>剃须护理</a>
+							<a href=""><i>&#xe505;</i>男士头部护理</a>
+						</div>
+					</li>
+					<li class="content-left-link">
+						<p class="content-left-link-title"><i>&#xe50a;</i><a href="">孕婴护理</a></p>
+						<div>
+							<a href=""><i>&#xe505;</i>婴儿沐浴</a>
+							<a href=""><i>&#xe505;</i>婴儿护肤</a>
+							<a href=""><i>&#xe505;</i>婴儿食品</a>
+							<a href=""><i>&#xe505;</i>孕妇护肤</a>
+							<a href=""><i>&#xe505;</i>孕妇食品</a>
+							<a href=""><i>&#xe505;</i>其他孕婴工具</a>
+						</div>
+					</li>
+					<li class="content-left-link">
+						<p class="content-left-link-title"><i>&#xe50a;</i><a href="">配件</a></p>
+						<div>
+							<a href=""><i>&#xe505;</i>项链</a>
+							<a href=""><i>&#xe505;</i>吊饰</a>
+						</div>
+					</li>
+				</ul>
+				<div class="content-left-title">浏览记录</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- 底部 -->
+	<div id="footer">
+		<div class="top">
+			<ul>
+				<li>
+					<div>&#xe612;</div>
+					<p>香港特快直送</p>
+					<p>包税零扣关￥288包邮</p>
+				</li>
+				<li>
+					<div>&#xe611;</div>
+					<p>正品保证</p>
+					<p>专注美妆护肤40年</p>
+				</li>
+				<li>
+					<div>&#xe64b;</div>
+					<p>保税仓直送</p>
+					<p>包税零扣关 ¥168免邮</p>
+				</li>
+				<li>
+					<div>&#xe60e;</div>
+					<p>30天退换保证</p>
+					<p>为您提供售后无忧保障</p>
+				</li>
+				<li>
+					<div>&#xe610;</div>
+					<p>香港上市</p>
+					<p>股票代码 HK00178</p>
+				</li>
+			</ul>
+		</div>
+		<div class="bottom">
+			<ul>
+				<li><a href="">新手上路</a></li>
+				<li><a href="">常见问题</a></li>
+				<li><a href="">购物流程</a></li>
+				<li><a href="">优惠劵说明</a></li>
+				<li><a href="">联络我们</a></li>
+				<li><a href="">常见问题</a></li>
+			</ul>
+			<ul>
+				<li><a href="">付款方式</a></li>
+				<li><a href="">在线支付</a></li>
+				<li><a href="">积分支付</a></li>
+			</ul>
+			<ul>
+				<li><a href="">配送方式</a></li>
+				<li><a href="">配送说明</a></li>
+				<li><a href="">追踪订单</a></li>
+			</ul>
+			<ul>
+				<li><a href="">售后服务</a></li>
+				<li><a href="">正品保证</a></li>
+				<li><a href="">价格承诺</a></li>
+				<li><a href="">30日退换保证</a></li>
+				<li><a href="">退款程序</a></li>
+				<li><a href="">更改订单</a></li>
+			</ul>
+			<ul>
+				<li><a href="">莎莎会员</a></li>
+				<li><a href="">积分奖励</a></li>
+				<li><a href="">VIP会员计划</a></li>
+			</ul>
+			<dl>
+				<dt><img src="images/weiboQR.png" alt=""></dt>
+				<dd>莎莎网官方微博<br/>@莎莎网</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/weixinQR.png" alt=""></dt>
+				<dd>莎莎网官方微信<br/>ID:hksasadotcom</dd>
+			</dl>
+			<img src="images/ad.jpg" alt="">
+		</div>
+	</div>
+	<!-- 底行 -->
+	<div id="bigLast">
+		<div id="last">
+			<ul>
+				<li><a href="">关于莎莎</a></li>
+				<li><a href="">使用条款</a></li>
+				<li><a href="">隐私策略</a></li>
+				<li><a href="">批发服务</a></li>
+				<li><a href="">招商合作</a></li>
+				<li><a href="">帮助中心</a></li>
+				<li><a href="">港澳店铺推广</a></li>
+				<li><a href="">人才招聘</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">其他送货地区</a></li>
+			</ul>
+			<p>Copyright 2000-2018 Sa Sa dot Com Limited 版权所有莎莎国际控股有限公司成员</p>
+		</div>
+	</div>
+
+	<!-- 购物车 -->
+	<div id="shopping-cart">
+		<a class="shopping-cart-a" href="log.html">
+			<i>&#xe634;</i>
+			<div class="shopping-cart-a-div">我的账户</div>
+		</a>
+		<a class="shopping-cart-a shopping-cart-click" href="">
+			<i>&#xe65a;</i><p>购物车</p><em class="product-num">0</em>
+		</a>
+		<a class="shopping-cart-a" href="">
+			<i>&#xe613;</i>
+			<div class="shopping-cart-a-div">我的收藏</div>
+		</a>
+		<a class="shopping-cart-a" href=""><i>&#xe6f6;</i><div class="shopping-cart-a-div">浏览记录</div></a>
+		<a class="shopping-cart-a" href=""><i>&#xe689;</i><div class="shopping-cart-a-div">线上服务</div></a>
+		<div class="shopping-cart-link">
+			<div class="shopping-cart-title">购物车<div class="shopping-cart-quit">&#xe63d;</div></div>
+			<div class="shopping-cart-content">
+				<ul class="shopping-cart-content-list">
+					<p>购物车里还没有商品，赶集选购吧！</p>
+				</ul>
+			</div>
+			<div class="shopping-cart-bottom">
+				<p>共<span class="num"></span>件商品 已选择<span class="num"></span>件<span class="price">￥</span></p>
+				<a href="basket.html">去购物车结算</a>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
